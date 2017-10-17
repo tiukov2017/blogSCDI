@@ -29,4 +29,6 @@ Route::get('bloq/show/{id}','postsController@delete');
 
 Route::get('bloq/{id}','postsController@post');
 
+Route::get('bloq/insert/{id}','postsController@insert');
+
 

@@ -60,4 +60,21 @@ class PostsController extends Controller
 
         return view('Post',compact('post'));
     }
+    public function insert ($id)
+    {
+        //dd('id = 19');
+//        $this->validate(request(),[
+//            'title' => 'required',
+//            'body'=>'required'
+//        ]);
+
+        $post = Post::findOrFail($id);
+        //dd($post);
+        return view('insert',compact('post'));
+//        $post->title = request('title');
+//        $post->body = request('body');
+//        $post->save();
+//
+//        return redirect('/bloq/show');
+    }
 }
