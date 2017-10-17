@@ -44,7 +44,6 @@ class PostsController extends Controller
         $post->save();
 
         return redirect('/bloq/show');
-        //dd(request('title'));
     }
 
     public function delete ($id)
@@ -57,7 +56,6 @@ class PostsController extends Controller
     }
     public function post ($id)
     {
-        //dd('post id');
         $post = Post::findOrFail($id);
 
         return view('Post',compact('post'));

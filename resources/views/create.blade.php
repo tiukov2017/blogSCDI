@@ -1,4 +1,3 @@
-
 @extends('bloq')
 
 @section('content')
