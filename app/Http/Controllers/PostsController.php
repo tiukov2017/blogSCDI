@@ -16,6 +16,11 @@ class PostsController extends Controller
 
             return view('show',compact('bloqs'));
     }
+
+    public function blog ()
+    {
+        return view('bloq');
+    }
     public function create ()
     {
             //dd('test-create');

@@ -24,7 +24,7 @@
             <a class="nav-link" href="/public/bloq/show">Show</a>
             <a class="nav-link" href="/public/bloq/show/create">Create</a>
             <a class="nav-link" href="/public/bloq">Blog</a>
-            <a class="nav-link" href="/public">Laravel</a>
+            <a class="nav-link" href="/public/bloq/laravel">Laravel</a>
             <a class="nav-link" href="#">About</a>
         </nav>
     </div>
