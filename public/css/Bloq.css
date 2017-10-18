@@ -164,3 +164,17 @@ h6, .h6 {
 .blog-footer p:last-child {
     margin-bottom: 0;
 }
+
+.test-red{
+    color: #f9f9f9;
+    text-align: center;
+    padding: 10rem;
+    font-size: 2rem;
+}
+
+.test-red-class{
+    color: #4860F9;
+    text-align: center;
+    padding: 10rem;
+    font-size: 2rem;
+}

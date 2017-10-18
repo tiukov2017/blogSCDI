@@ -15,7 +15,7 @@
                 {{--<h5 class="blog-post-title"> {{'title : '.$post->title }} </h5>--}}
                 {{--<h5 class="blog-post-title"> {{'href=http://bloq10102017.loc/public/bloq/show/'.$post->id}}</h5>--}}
 
-                <p> <a href="/public/bloq/show/{{$post->id}}"> {{$post->title}} </a></p>
+                <p> <a href="/public/bloq/show/{{$post->id}}">  {{$post->title}} </a></p>
 
                 <p class="blog-post-meta">{{$post->created_at}}</p>
 

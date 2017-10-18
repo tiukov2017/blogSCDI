@@ -27,7 +27,7 @@
 
             <nav class="blog-pagination">
                 <a class="btn btn-outline-primary" href="/public/bloq/show/{{$post->id}}">Delete</a>
-                <a class="btn btn-outline-primary" href="/public/bloq/insert/{{$post->id}}">Insert</a>
+                <a class="btn btn-outline-primary" href="/public/bloq/insert/{{$post->id}}">Update</a>
                  </nav><br><br>
     @endif
     </div>
