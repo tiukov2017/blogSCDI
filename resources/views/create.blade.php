@@ -1,7 +1,8 @@
 @extends('bloq')
 
 @section('content')
-
+    {{--<!-- Custom styles for this template -->--}}
+    {{--<link href="css/Bloq.css" rel="stylesheet">--}}
         <div class="col-sm-8 blog-main">
             <h1>Publish a Post</h1>
 
