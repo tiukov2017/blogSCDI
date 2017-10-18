@@ -63,8 +63,21 @@
                 margin-bottom: 30px;
             }
         </style>
+        <!-- Custom styles for this template -->
+        <link href="/public/css/Bloq.css" rel="stylesheet">
     </head>
     <body>
+    <div class="blog-masthead">
+        <div class="container">
+            <nav class="nav">
+                <a class="nav-link" href="/public/bloq/show">Show</a>
+                <a class="nav-link" href="/public/bloq/show/create">Create</a>
+                <a class="nav-link" href="/public/bloq">Blog</a>
+                <a class="nav-link" href="/public/bloq/laravel">Laravel</a>
+                <a class="nav-link" href="#">About</a>
+            </nav>
+        </div>
+    </div>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">

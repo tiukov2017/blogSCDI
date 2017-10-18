@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-    <link href="css/Bloq.css" rel="stylesheet">
+    <link href="/public/css/Bloq.css" rel="stylesheet">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
             <a class="nav-link" href="/public/bloq/show">Show</a>
             <a class="nav-link" href="/public/bloq/show/create">Create</a>
             <a class="nav-link" href="/public/bloq">Blog</a>
-            <a class="nav-link" href="/public">Laravel</a>
+            <a class="nav-link" href="/public/bloq/laravel">Laravel</a>
             <a class="nav-link" href="#">About</a>
         </nav>
     </div>
@@ -55,10 +55,10 @@
 
                 @yield('content')
 
-                <nav class="blog-pagination">
-                <a class="btn btn-outline-primary" href="#">Older</a>
-                <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
-            </nav>
+                {{--<nav class="blog-pagination">--}}
+                {{--<a class="btn btn-outline-primary" href="#">Older</a>--}}
+                {{--<a class="btn btn-outline-secondary disabled" href="#">Newer</a>--}}
+            {{--</nav>--}}
 
         </div><!-- /.blog-main -->
 

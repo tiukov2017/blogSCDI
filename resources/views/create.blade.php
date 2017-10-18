@@ -1,9 +1,7 @@
-
 @extends('bloq')
 
 @section('content')
-
-        <div class="col-sm-8 blog-main">
+         <div class="col-sm-8 blog-main">
             <h1>Publish a Post</h1>
 
             <hr>
