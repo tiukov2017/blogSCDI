@@ -21,9 +21,9 @@ Route::get('bloq', function () {
 
 Route::get('bloq/show','postsController@index');
 
-Route::get('bloq/show/create','postsController@create');
-
 Route::post('bloq/show/','postsController@store');
+
+Route::get('bloq/show/create','postsController@create');
 
 Route::get('bloq/show/{id}','postsController@delete');
 
@@ -31,6 +31,6 @@ Route::get('bloq/{id}','postsController@post');
 
 Route::get('bloq/insert/{id}','postsController@insert');
 
-Route::post('bloq/insert/ok/{id}','postsController@update');
+Route::post('bloq/insert/{id}','postsController@update');
 
 

@@ -3,11 +3,11 @@
 @section('content')
 
     <div class="col-sm-8 blog-main">
-        <h1>Publish a Post</h1>
+        <h1>Update a Post</h1>
 
         <hr>
 
-        <form method="post" action="/public/bloq/insert/ok/{{$post->id}}">
+        <form method="post" action="/public/bloq/insert/{{$post->id}}">
             {{ csrf_field() }}
 
             {{--<div class="form-group">--}}
