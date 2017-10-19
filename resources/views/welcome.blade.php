@@ -76,8 +76,8 @@
                 <a class="nav-link" href="/public/bloq/show">Show</a>
                 <a class="nav-link" href="/public/bloq/show/create">Create</a>
                 <a class="nav-link" href="/public/bloq">Blog</a>
-                <a class="nav-link" href="/public/bloq/laravel">Laravel</a>
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link active" href="/public/bloq/laravel">Laravel</a>
+                <a class="nav-link" href="/public/about">About</a>
             </nav>
         </div>
     </div>

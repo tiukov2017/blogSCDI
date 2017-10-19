@@ -13,13 +13,17 @@ class PostsController extends Controller
     public function index ()
     {
             $bloqs = Post::all();
-
+            //dd($bloqs->toArray());
             return view('show',compact('bloqs'));
     }
 
     public function blog ()
     {
         return view('bloq');
+    }
+    public function about ()
+    {
+        return view('about');
     }
     public function welcome ()
     {

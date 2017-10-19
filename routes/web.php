@@ -11,6 +11,7 @@
 |
 */
 
+Route::get('about','postsController@about');
 
 Route::get('bloq','postsController@blog');
 

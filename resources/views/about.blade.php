@@ -25,73 +25,80 @@
             <a class="nav-link" href="/public/bloq/show/create">Create</a>
             <a class="nav-link" href="/public/bloq">Blog</a>
             <a class="nav-link" href="/public/bloq/laravel">Laravel</a>
-            <a class="nav-link" href="/public/about">About</a>
+            <a class="nav-link active" href="/public/about">About</a>
         </nav>
     </div>
 </div>
 
 <div class="blog-header">
-    <div class="container">
-        <h1 class="blog-title">Blog</h1>
-        <p class="lead blog-description">An example blog.</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="center-block">
+                    <h1 class="blog-title ">Blog</h1>
+                    <p class="lead blog-description">An example blog.</p>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="container">
+<div class="container-fluid">
 
     <div class="row">
 
         {{--<div class="col-sm blog-main">--}}
-            {{--<div class="blog-post">--}}
-            {{--<b>test</b>--}}
-            {{--</div>--}}
+        {{--<div class="blog-post">--}}
+        {{--<b>test</b>--}}
         {{--</div>--}}
+        {{--</div>--}}
+        @section('tab')
+            <div class="col offset-sm-1 blog-sidebar">
+                <div class="sidebar-module sidebar-module-inset">
+                    <h4>About</h4>
+                    <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                </div>
+                <div class="sidebar-module">
+                    <h4>Archives</h4>
+                    <ol class="list-unstyled">
+                        <li><a href="#">March 2014</a></li>
+                        <li><a href="#">February 2014</a></li>
+                        <li><a href="#">January 2014</a></li>
 
-        <div class="col-sm-8 blog-main">
+
+                    </ol>
+                </div>
+                <div class="sidebar-module">
+                    <h4>Elsewhere</h4>
+                    <ol class="list-unstyled">
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ol>
+                </div>
+            </div><!-- /.blog-sidebar -->
+        @endsection
+        @yield('tab')
+        <div class="col-5 blog-main">
             @section('content')
-            <div class="blog-post">
-                <h2 class="blog-post-title">blog post</h2>
-                <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+                <div class="blog-post">
+                    <h2 class="blog-post-title">blog post</h2>
+                    <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
 
-                <p>This blog post.</p>
-                <hr>
+                    <p>This blog post.</p>
+                    <hr>
 
-            </div><!-- /.blog-post-->
+                </div><!-- /.blog-post-->
             @endsection
 
-                @yield('content')
+            @yield('content')
 
-                {{--<nav class="blog-pagination">--}}
-                {{--<a class="btn btn-outline-primary" href="#">Older</a>--}}
-                {{--<a class="btn btn-outline-secondary disabled" href="#">Newer</a>--}}
+            {{--<nav class="blog-pagination">--}}
+            {{--<a class="btn btn-outline-primary" href="#">Older</a>--}}
+            {{--<a class="btn btn-outline-secondary disabled" href="#">Newer</a>--}}
             {{--</nav>--}}
 
         </div><!-- /.blog-main -->
 
-        <div class="col-sm-3 offset-sm-1 blog-sidebar">
-            <div class="sidebar-module sidebar-module-inset">
-                <h4>About</h4>
-                <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            </div>
-            <div class="sidebar-module">
-                <h4>Archives</h4>
-                <ol class="list-unstyled">
-                    <li><a href="#">March 2014</a></li>
-                    <li><a href="#">February 2014</a></li>
-                    <li><a href="#">January 2014</a></li>
-
-                </ol>
-            </div>
-            <div class="sidebar-module">
-                <h4>Elsewhere</h4>
-                <ol class="list-unstyled">
-                    <li><a href="#">GitHub</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Facebook</a></li>
-                </ol>
-            </div>
-        </div><!-- /.blog-sidebar -->
-
+        @yield('tab')
     </div><!-- /.row -->
 
 </div><!-- /.container -->
