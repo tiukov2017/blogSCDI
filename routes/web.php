@@ -11,16 +11,12 @@
 |
 */
 
-Route::get('bloq', function () {
-    return view('bloq');
-});
 
-Route::get('bloq/laravel', function () {
-    return view('welcome');
-});
+Route::get('bloq','postsController@blog');
+
 Route::get('/','postsController@blog');
 
-//Route::get('bloq','postsController@blog');
+Route::get('bloq/laravel','postsController@welcome');
 
 Route::get('bloq/show','postsController@index');
 

@@ -21,6 +21,10 @@ class PostsController extends Controller
     {
         return view('bloq');
     }
+    public function welcome ()
+    {
+        return view('welcome');
+    }
     public function create ()
     {
             //dd('test-create');
