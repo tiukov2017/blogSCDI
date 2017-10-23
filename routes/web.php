@@ -15,6 +15,8 @@ Route::get('about','postsController@about');
 
 Route::get('bloq','postsController@blog');
 
+Route::get('test','postsController@test');
+
 Route::get('/','postsController@blog');
 
 Route::get('bloq/laravel','postsController@welcome');

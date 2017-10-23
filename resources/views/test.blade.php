@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-    {{--<link href="/public/css/Test.css" rel="stylesheet">--}}
-    <link href="/public/css/Bloq.css" rel="stylesheet">
+    <link href="/public/css/Test.css" rel="stylesheet">
+    {{--<link href="/public/css/Bloq.css" rel="stylesheet">--}}
 </head>
 
 <body>
@@ -26,19 +26,17 @@
             <a class="nav-link" href="/public/bloq/show/create">Create</a>
             <a class="nav-link" href="/public/bloq">Blog</a>
             <a class="nav-link" href="/public/bloq/laravel">Laravel</a>
-            <a class="nav-link active" href="/public/about">About</a>
-            <a class="nav-link" href="/public/test">Test</a>
+            <a class="nav-link" href="/public/about">About</a>
+            <a class="nav-link active" href="/public/test">Test</a>
         </nav>
     </div>
 </div>
 
 <div class="blog-header ">
     <div class="container-fluid ">
-        <div class="row">
-            <div class="center-block">
+        <div class="row center-block">
                     <h1 class="blog-title ">Blog</h1>
                     <p class="lead blog-description">An example blog.</p>
-            </div>
         </div>
     </div>
 </div>

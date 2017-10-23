@@ -25,6 +25,10 @@ class PostsController extends Controller
     {
         return view('about');
     }
+    public function test ()
+    {
+        return view('test');
+    }
     public function welcome ()
     {
         return view('welcome');
