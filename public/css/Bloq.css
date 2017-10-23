@@ -11,6 +11,12 @@
 body {
     font-family: Georgia, "Times New Roman", Times, serif;
     color: #555;
+
+    padding: 0;
+    margin: 0;
+    background: #f8f7e5  no-repeat center top;
+    width: 100%;
+    display: table;
 }
 
 h1, .h1,

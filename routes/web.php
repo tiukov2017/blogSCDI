@@ -34,6 +34,3 @@ Route::get('bloq/{id}','postsController@post');
 Route::get('bloq/insert/{id}','postsController@insert');
 
 Route::post('bloq/insert/{id}','postsController@update');
-
-
-

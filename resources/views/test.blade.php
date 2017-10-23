@@ -41,7 +41,7 @@
     </div>
 </div>
 
-<div class="container-fluid">
+<div class="container">
 
     <div class="row">
 
@@ -58,7 +58,7 @@
                 </div>
                 <div class="sidebar-module">
                     <h4>Archives</h4>
-                    <ol class="list-unstyled">
+                    <ol class="list-unstyled testColor">
                         <li><a href="#">March 2014</a></li>
                         <li><a href="#">February 2014</a></li>
                         <li><a href="#">January 2014</a></li>

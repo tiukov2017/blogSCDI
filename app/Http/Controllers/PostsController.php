@@ -6,17 +6,14 @@ use Illuminate\Http\Request;
 use App\Post;
 class PostsController extends Controller
 {
-    public function __construct ()
-    {
+    public function __construct (){}
 
-    }
     public function index ()
     {
             $bloqs = Post::all();
-            //dd($bloqs->toArray());
-            return view('show',compact('bloqs'));
+        //dd($bloqs->jsonSerialize());
+        return view('show',compact('bloqs'));
     }
-
     public function blog ()
     {
         return view('bloq');
@@ -38,7 +35,6 @@ class PostsController extends Controller
             //dd('test-create');
             return view('create');
     }
-
     public function store ()
     {
         $this->validate(request(),[

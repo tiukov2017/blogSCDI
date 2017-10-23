@@ -11,6 +11,12 @@
 body {
     font-family: Georgia, "Times New Roman", Times, serif;
     color: #555;
+
+    padding: 0;
+    margin: 0;
+    background: #f8f7e5  no-repeat center top;
+    width: 100%;
+    display: table;
 }
 
 h1, .h1,
@@ -34,7 +40,7 @@ h6, .h6 {
 }
 .blog-masthead{
     margin-bottom: 3rem;
-    background: #428bca; /*#428bca*/
+    background-color: #428bca; /*#428bca*/
     -webkit-box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
     box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
 }
@@ -44,6 +50,28 @@ h6, .h6 {
     font-weight: 500;
     color: #cdddeb;
 }
+.nav-link:hover,
+.nav-link:focus {
+    color: #fff;
+    background-color: transparent;
+}
+.nav-link.active {
+    color: #fff;
+}
+.nav-link.active:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -.3rem;
+    vertical-align: middle;
+    content: "";
+    border-right: .3rem solid transparent;
+    border-bottom: .3rem solid;
+    border-left: .3rem solid transparent;
+}
+
 .blog-header{
     padding-bottom: 1.25rem;
     margin-bottom: 2rem;
