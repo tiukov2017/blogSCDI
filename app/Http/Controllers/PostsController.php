@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Post;
+
 class PostsController extends Controller
 {
     public function __construct (){}
@@ -24,7 +25,7 @@ class PostsController extends Controller
     }
     public function test ()
     {
-        return view('test');
+        return view('analytics');
     }
     public function welcome ()
     {

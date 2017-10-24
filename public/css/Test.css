@@ -116,3 +116,30 @@ h6, .h6 {
 .blog-footer p:last-child {
     margin-bottom: 0;
 }
+/*// add code in a Blog.css ///*/
+@media (min-width: 40em) {
+    .blog-title {
+        font-size: 3.5rem;
+    }
+}
+
+.blog-pagination > .btn {
+    border-radius: 2rem;
+}
+
+.blog-post-title {
+    margin-bottom: .25rem;
+    font-size: 2.5rem;
+}
+
+.blog-post-meta {
+    margin-bottom: 1.25rem;
+    color: #999;
+}
+
+
+
+
+
+
+
