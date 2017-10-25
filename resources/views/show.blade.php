@@ -20,11 +20,20 @@
 
                 <?php  $wordCount=0;
 
-                //dd(str_word_count($post->body, 1));
-                foreach(str_word_count($post->body, 1) as $word){
-                    if($word!=''){
-                        $wordCount+=1;
-                                    }
+
+                    $words=str_word_count($post->body, 1);
+
+                foreach($words as $word)
+                {
+                    if($word!='')
+                    {
+                        $wordCount++;
+
+                        if(empty($arr[$word])) $arr[$word]=1;
+                        else $arr[$word]++;
+
+
+                    }
                 }
                 ?>
 
@@ -34,6 +43,9 @@
             <hr>
         @endif
         @endforeach
+        {{--{{arsort($arr)}}--}}
+        {{--{{dd(array_slice($arr,0,10))}}--}}
+{{--        {{dd(array_sort($arr))}}--}}
     </div>
 
 @endsection

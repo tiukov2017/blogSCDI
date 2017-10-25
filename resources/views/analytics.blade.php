@@ -82,10 +82,39 @@
 
                  @section('content')
                     <div class="blog-post">
-                        <h2 class="blog-post-title">blog post</h2>
-                        <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+                        <h2 class="blog-post-title">Top words in posts</h2><br>
 
-                        <p>This blog post.</p>
+                        @foreach($bloqs as $post)
+
+                                    <?php  $wordCount=0;
+
+
+                                    $words=str_word_count($post->body, 1);
+
+                                    foreach($words as $word)
+                                    {
+                                        if($word!='')
+                                        {
+                                            $wordCount++;
+
+                                            if(empty($arr[$word])) $arr[$word]=1;
+                                            else $arr[$word]++;
+                                        }
+                                    }
+                                    ?>
+
+
+                        @endforeach
+                        <?php
+                        arsort($arr);
+                        $top=array_slice($arr,0,10);
+
+                        ?>
+                        @foreach($top as $word=>$count)
+                            <p>{{ $word }} - {{$count }}</p>
+
+                        @endforeach
+
                         <hr>
 
                     </div><!-- /.blog-post-->

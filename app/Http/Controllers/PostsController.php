@@ -25,7 +25,9 @@ class PostsController extends Controller
     }
     public function test ()
     {
-        return view('analytics');
+        $bloqs = Post::all();
+
+        return view('analytics',compact('bloqs'));
     }
     public function welcome ()
     {
