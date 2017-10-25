@@ -13,18 +13,20 @@
             <div class="blog-post">
 
                  <p> <a href="/public/bloq/show/{{$post->id}}">  {{$post->title}} </a></p>
+{{--                {{dd($post->title)}}--}}
+
 
                 <p class="blog-post-meta">{{$post->updated_at}}</p>
 
                 <?php  $wordCount=0;
 
+                //dd(str_word_count($post->body, 1));
                 foreach(str_word_count($post->body, 1) as $word){
                     if($word!=''){
                         $wordCount+=1;
                                     }
                 }
                 ?>
-
 
                 <p> <a href="/public/bloq/{{$post->id}}"> {{$post->body}} </a><br>{{"words =".$wordCount}}</p>
 
