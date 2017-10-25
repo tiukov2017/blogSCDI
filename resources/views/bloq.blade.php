@@ -96,7 +96,25 @@
     </div><!-- /.row -->
 
 </div><!-- /.container -->
+{{--<br>{{dd($_SERVER['REQUEST_URI'])}}--}}
+{{--<br>{{dd($_SERVER)}}--}}
 
+@if($_SERVER['REQUEST_URI']=='/public/bloq/show')
+{{--{{dd($_SERVER['REQUEST_URI'])}}--}}
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+        </li>
+    </ul>
+</nav>
+@endif
 <footer class="blog-footer">
     <p>Blog template built for <a href="https://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
     <p>
