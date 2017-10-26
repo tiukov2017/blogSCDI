@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Post;
+use resources\views\analiticServer;
 
 class PostsController extends Controller
 {
@@ -27,7 +28,27 @@ class PostsController extends Controller
     {
         $bloqs = Post::all();
 
-        return view('analytics',compact('bloqs'));
+        foreach($bloqs as $post)
+        {
+            $wordCount = 0;
+            $words = str_word_count($post->body, 1);
+
+            foreach ($words as $word) {
+                if ($word != '') {
+                    $wordCount++;
+
+                    if (empty($arr[$word])) $arr[$word] = 1;
+                    else $arr[$word]++;
+                }
+            }
+
+        }
+        arsort($arr);
+        $top=array_slice($arr,0,10);
+        $i=0;
+
+
+        return view('analytics',compact('top'));
     }
     public function welcome ()
     {

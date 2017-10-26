@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,34 +85,38 @@
                     <div class="blog-post">
                         <h2 class="blog-post-title">Top words in posts</h2><br>
 
-                        @foreach($bloqs as $post)
+                        {{--@foreach($bloqs as $post)--}}
 
-                                    <?php  $wordCount=0;
-
-
-                                    $words=str_word_count($post->body, 1);
-
-                                    foreach($words as $word)
-                                    {
-                                        if($word!='')
-                                        {
-                                            $wordCount++;
-
-                                            if(empty($arr[$word])) $arr[$word]=1;
-                                            else $arr[$word]++;
-                                        }
-                                    }
-                                    ?>
+                                    {{--<  $wordCount=0;--}}
 
 
-                        @endforeach
+                                    {{--$words=str_word_count($post->body, 1);--}}
+
+                                    {{--foreach($words as $word)--}}
+                                    {{--{--}}
+                                        {{--if($word!='')--}}
+                                        {{--{--}}
+                                            {{--$wordCount++;--}}
+
+                                            {{--if(empty($arr[$word])) $arr[$word]=1;--}}
+                                            {{--else $arr[$word]++;--}}
+                                        {{--}--}}
+                                    {{--}--}}
+                                    {{--?>--}}
+
+
+                        {{--@endforeach--}}
                         <?php
-                        arsort($arr);
-                        $top=array_slice($arr,0,10);
 
+                        //$top->testFunction->mySortArr(arr);
+
+//                        arsort($arr);
+//                        $top=array_slice($arr,0,10);
+                        $i=0;
                         ?>
                         @foreach($top as $word=>$count)
-                            <p>{{ $word }} - {{$count }}</p>
+
+                            <p>{{++$i.") ". $word }} - {{$count }}</p>
 
                         @endforeach
 
